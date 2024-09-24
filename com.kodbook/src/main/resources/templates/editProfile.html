@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>KodBook Sign up</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+	</head>
+	<body>
+	    <h1>KodBook!</h1>
+	    <h3>Update your profile!</h3>
+	    <hr>
+	    <form action="/updateProfile" method="post" enctype="multipart/form-data">
+	    	<label>DOB : </label>
+	    	<input type="date" name="dob">
+	    	<br><br>
+	    	
+	    	<label>GENDER : </label>
+	    	<label>Male</label><input type="radio" name="gender" value = "M">
+	    	<label>Female</label><input type="radio" name="gender" value = "F">
+	    	<label>Other</label><input type="radio" name="gender" value = "O">
+	    	<br><br>
+	    	
+	    	<label>CITY : </label>
+	    	<input type="text" name="city">
+	    	<br><br>
+	    	
+	    	<label>BIO : </label>
+	    	<input type="text" name="bio">
+	    	<br><br>
+	    	
+	    	<label>COLLEGE : </label>
+	    	<input type="text" name="college">
+	    	<br><br>
+	    	
+	    	<label>LINKED IN : </label>
+	    	<input type="text" name="linkedIn">
+	    	<br><br>
+	    	
+	    	<label>GIT HUB : </label>
+	    	<input type="text" name="lgitHub">
+	    	<br><br>
+	    	 <input type="file" name="profilePic" accept="image/*" />
+	    	<br><br>
+	    	
+	    	
+	    	
+	    	
+	    	<input type="submit" value="Update Profile">
+	        <hr>
+	       
+	        <a href = "/">Already have an account? Login insted</a>
+	    
+	    </form>
+	    
+	</body>
+</html>
